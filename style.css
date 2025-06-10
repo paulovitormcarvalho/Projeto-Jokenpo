@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'gang of three';
+    src: url(./fonts/gang_of_three.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,15 +12,29 @@
 }
 
 body {
-    background-image: url(./img/logo\ jokenpô.jpg);
+    background-image: url(./img/image.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-position: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
 }
 
-.container{
+h1 {
+    font-family: 'gang of three', sans-serif;
+    position: absolute;
+    top: 0;
+    margin-top: 80px;
+    font-size: 170px;
+    color: #F5F5DC;
+    text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px  2px 0 black, 2px  2px 0 black;
+    text-shadow: 2px 2px 5px black;
+}
+
+.container {
     padding: 20px;
     background-color: #FFFFFF;
     border-radius: 10px;
@@ -23,13 +44,13 @@ body {
     justify-content: center;
 }
 
-.buttons{
+.buttons {
     display: flex;
     gap: 25px;
     margin: 30px 0;
 }
 
-button{
+button {
     padding: 10px;
     font-size: 50px;
     cursor: pointer;
@@ -38,27 +59,27 @@ button{
     transition: opacity 0.3s ease-in-out;
 }
 
-button:hover{
+button:hover {
     opacity: 0.6;
 }
 
-button:active{
+button:active {
     opacity: 0.4;
 }
 
-#rock{
+#rock {
     background-color: #555555;
 }
 
-#paper{
+#paper {
     background-color: #F5F5DC;
 }
 
-#scissor{
+#scissor {
     background-color: #6699CC;
 }
 
-p{
+p {
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -69,4 +90,10 @@ p{
 
 .machine-score span {
     color: rgb(224, 71, 15);
+}
+
+@media screen and (max-width: 680px) {
+    h1{
+        font-size: 90px;
+    }
 }
